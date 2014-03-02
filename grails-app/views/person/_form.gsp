@@ -29,6 +29,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'favoriteColor', 'error')} ">
+	<label for="favoriteColor">
+		<g:message code="person.favoriteColor.label" default="Favorite Color" />
+		
+	</label>
+	<g:textField name="favoriteColor" value="${personInstance?.favoriteColor}"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: personInstance, field: 'phone', 'error')} ">
 	<label for="phone">
 		<g:message code="person.phone.label" default="Phone" />

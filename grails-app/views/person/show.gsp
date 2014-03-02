@@ -50,6 +50,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${personInstance?.favoriteColor}">
+				<li class="fieldcontain">
+					<span id="favoriteColor-label" class="property-label"><g:message code="person.favoriteColor.label" default="Favorite Color" /></span>
+					
+						<span class="property-value" aria-labelledby="favoriteColor-label"><g:fieldValue bean="${personInstance}" field="favoriteColor"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${personInstance?.phone}">
 				<li class="fieldcontain">
 					<span id="phone-label" class="property-label"><g:message code="person.phone.label" default="Phone" /></span>
