@@ -7,11 +7,13 @@ class Person {
 		lastName blank: false
 		phone blank: true, nullable: true
 		favoriteColor blank: true, nullable: true
+		birthCountry nullable: true
     }
 	
 	String firstName
 	String lastName;
 	int birthYear;
+	String birthCountry;
 	String phone;
 	String favoriteColor;
 }

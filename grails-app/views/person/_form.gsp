@@ -20,12 +20,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'birthYear', 'error')} required">
-	<label for="birthYear">
-		<g:message code="person.birthYear.label" default="Birth Year" />
-		<span class="required-indicator">*</span>
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'phone', 'error')} ">
+	<label for="phone">
+		<g:message code="person.phone.label" default="Phone" />
+		
 	</label>
-	<g:field name="birthYear" type="number" value="${personInstance.birthYear}" required=""/>
+	<g:textField name="phone" value="${personInstance?.phone}"/>
 
 </div>
 
@@ -38,12 +38,21 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'phone', 'error')} ">
-	<label for="phone">
-		<g:message code="person.phone.label" default="Phone" />
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'birthCountry', 'error')} ">
+	<label for="birthCountry">
+		<g:message code="person.birthCountry.label" default="Birth Country" />
 		
 	</label>
-	<g:textField name="phone" value="${personInstance?.phone}"/>
+	<g:textField name="birthCountry" value="${personInstance?.birthCountry}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'birthYear', 'error')} required">
+	<label for="birthYear">
+		<g:message code="person.birthYear.label" default="Birth Year" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="birthYear" type="number" value="${personInstance.birthYear}" required=""/>
 
 </div>
 

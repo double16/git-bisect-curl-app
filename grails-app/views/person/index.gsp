@@ -28,11 +28,13 @@
 					
 						<g:sortableColumn property="lastName" title="${message(code: 'person.lastName.label', default: 'Last Name')}" />
 					
-						<g:sortableColumn property="birthYear" title="${message(code: 'person.birthYear.label', default: 'Birth Year')}" />
+						<g:sortableColumn property="phone" title="${message(code: 'person.phone.label', default: 'Phone')}" />
 					
 						<g:sortableColumn property="favoriteColor" title="${message(code: 'person.favoriteColor.label', default: 'Favorite Color')}" />
 					
-						<g:sortableColumn property="phone" title="${message(code: 'person.phone.label', default: 'Phone')}" />
+						<g:sortableColumn property="birthCountry" title="${message(code: 'person.birthCountry.label', default: 'Birth Country')}" />
+					
+						<g:sortableColumn property="birthYear" title="${message(code: 'person.birthYear.label', default: 'Birth Year')}" />
 					
 					</tr>
 				</thead>
@@ -44,11 +46,13 @@
 					
 						<td>${fieldValue(bean: personInstance, field: "lastName")}</td>
 					
-						<td>${fieldValue(bean: personInstance, field: "birthYear")}</td>
+						<td>${fieldValue(bean: personInstance, field: "phone")}</td>
 					
 						<td>${fieldValue(bean: personInstance, field: "favoriteColor")}</td>
 					
-						<td>${fieldValue(bean: personInstance, field: "phone")}</td>
+						<td>${fieldValue(bean: personInstance, field: "birthCountry")}</td>
+					
+						<td>${fieldValue(bean: personInstance, field: "birthYear")}</td>
 					
 					</tr>
 				</g:each>

@@ -41,11 +41,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${personInstance?.birthYear}">
+				<g:if test="${personInstance?.phone}">
 				<li class="fieldcontain">
-					<span id="birthYear-label" class="property-label"><g:message code="person.birthYear.label" default="Birth Year" /></span>
+					<span id="phone-label" class="property-label"><g:message code="person.phone.label" default="Phone" /></span>
 					
-						<span class="property-value" aria-labelledby="birthYear-label"><g:fieldValue bean="${personInstance}" field="birthYear"/></span>
+						<span class="property-value" aria-labelledby="phone-label"><g:fieldValue bean="${personInstance}" field="phone"/></span>
 					
 				</li>
 				</g:if>
@@ -59,11 +59,20 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${personInstance?.phone}">
+				<g:if test="${personInstance?.birthCountry}">
 				<li class="fieldcontain">
-					<span id="phone-label" class="property-label"><g:message code="person.phone.label" default="Phone" /></span>
+					<span id="birthCountry-label" class="property-label"><g:message code="person.birthCountry.label" default="Birth Country" /></span>
 					
-						<span class="property-value" aria-labelledby="phone-label"><g:fieldValue bean="${personInstance}" field="phone"/></span>
+						<span class="property-value" aria-labelledby="birthCountry-label"><g:fieldValue bean="${personInstance}" field="birthCountry"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${personInstance?.birthYear}">
+				<li class="fieldcontain">
+					<span id="birthYear-label" class="property-label"><g:message code="person.birthYear.label" default="Birth Year" /></span>
+					
+						<span class="property-value" aria-labelledby="birthYear-label"><g:fieldValue bean="${personInstance}" field="birthYear"/></span>
 					
 				</li>
 				</g:if>
