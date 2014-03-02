@@ -50,6 +50,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${personInstance?.phone}">
+				<li class="fieldcontain">
+					<span id="phone-label" class="property-label"><g:message code="person.phone.label" default="Phone" /></span>
+					
+						<span class="property-value" aria-labelledby="phone-label"><g:fieldValue bean="${personInstance}" field="phone"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:personInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

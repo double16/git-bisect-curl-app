@@ -29,3 +29,12 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'phone', 'error')} ">
+	<label for="phone">
+		<g:message code="person.phone.label" default="Phone" />
+		
+	</label>
+	<g:textField name="phone" value="${personInstance?.phone}"/>
+
+</div>
+

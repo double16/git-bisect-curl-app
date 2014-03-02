@@ -30,6 +30,8 @@
 					
 						<g:sortableColumn property="birthYear" title="${message(code: 'person.birthYear.label', default: 'Birth Year')}" />
 					
+						<g:sortableColumn property="phone" title="${message(code: 'person.phone.label', default: 'Phone')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -41,6 +43,8 @@
 						<td>${fieldValue(bean: personInstance, field: "lastName")}</td>
 					
 						<td>${fieldValue(bean: personInstance, field: "birthYear")}</td>
+					
+						<td>${fieldValue(bean: personInstance, field: "phone")}</td>
 					
 					</tr>
 				</g:each>
