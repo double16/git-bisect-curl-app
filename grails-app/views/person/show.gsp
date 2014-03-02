@@ -41,6 +41,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${personInstance?.birthYear}">
+				<li class="fieldcontain">
+					<span id="birthYear-label" class="property-label"><g:message code="person.birthYear.label" default="Birth Year" /></span>
+					
+						<span class="property-value" aria-labelledby="birthYear-label"><g:fieldValue bean="${personInstance}" field="birthYear"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:personInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

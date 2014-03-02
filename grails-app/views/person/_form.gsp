@@ -20,3 +20,12 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'birthYear', 'error')} required">
+	<label for="birthYear">
+		<g:message code="person.birthYear.label" default="Birth Year" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="birthYear" type="number" value="${personInstance.birthYear}" required=""/>
+
+</div>
+
