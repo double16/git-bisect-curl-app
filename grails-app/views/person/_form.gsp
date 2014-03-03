@@ -47,6 +47,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'birthCity', 'error')} ">
+	<label for="birthCity">
+		<g:message code="person.birthCity.label" default="Birth City" />
+		
+	</label>
+	<g:textField name="birthCity" value="${personInstance?.birthCity}"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: personInstance, field: 'birthYear', 'error')} required">
 	<label for="birthYear">
 		<g:message code="person.birthYear.label" default="Birth Year" />

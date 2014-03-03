@@ -68,6 +68,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${personInstance?.birthCity}">
+				<li class="fieldcontain">
+					<span id="birthCity-label" class="property-label"><g:message code="person.birthCity.label" default="Birth City" /></span>
+					
+						<span class="property-value" aria-labelledby="birthCity-label"><g:fieldValue bean="${personInstance}" field="birthCity"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${personInstance?.birthYear}">
 				<li class="fieldcontain">
 					<span id="birthYear-label" class="property-label"><g:message code="person.birthYear.label" default="Birth Year" /></span>
