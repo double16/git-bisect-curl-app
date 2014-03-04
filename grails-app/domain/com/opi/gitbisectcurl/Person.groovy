@@ -9,6 +9,7 @@ class Person {
 		favoriteColor blank: true, nullable: true
 		birthCountry nullable: true
 		birthCity nullable: true
+		email nullable: true
     }
 	
 	String firstName
@@ -17,5 +18,6 @@ class Person {
 	String birthCountry;
 	String birthCity;
 	String phone;
+	String email;
 	String favoriteColor;
 }

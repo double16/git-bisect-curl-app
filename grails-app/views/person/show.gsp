@@ -77,6 +77,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${personInstance?.email}">
+				<li class="fieldcontain">
+					<span id="email-label" class="property-label"><g:message code="person.email.label" default="Email" /></span>
+					
+						<span class="property-value" aria-labelledby="email-label"><g:fieldValue bean="${personInstance}" field="email"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${personInstance?.birthYear}">
 				<li class="fieldcontain">
 					<span id="birthYear-label" class="property-label"><g:message code="person.birthYear.label" default="Birth Year" /></span>

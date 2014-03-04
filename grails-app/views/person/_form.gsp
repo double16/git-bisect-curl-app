@@ -56,6 +56,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'email', 'error')} ">
+	<label for="email">
+		<g:message code="person.email.label" default="Email" />
+		
+	</label>
+	<g:textField name="email" value="${personInstance?.email}"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: personInstance, field: 'birthYear', 'error')} required">
 	<label for="birthYear">
 		<g:message code="person.birthYear.label" default="Birth Year" />
